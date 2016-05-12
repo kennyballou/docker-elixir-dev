@@ -13,9 +13,9 @@ RUN set -xe \
     && curl -fSL "$ELIXIR_SRC_URL" -o elixir.tar.gz \
     && mkdir -p /usr/src/elixir-src \
     && tar -zxf elixir.tar.gz -C /usr/src/elixir-src --strip-components=1 \
+    && rm -f elixir.tar.gz \
     && cd /usr/src/elixir-src \
     && make install \
-    && rm -f elixir.tar.gz \
     && rm -rf /usr/src/elixir-src
 
 RUN set -xe \
