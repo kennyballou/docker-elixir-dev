@@ -8,6 +8,7 @@ ENV ELIXIR_VERSION=1.2.5
 RUN apk update \
     && apk add \
        curl \
+       postgresql-client \
     && ELIXIR_SRC_URL="https://github.com/elixir-lang/elixir/archive/v$ELIXIR_VERSION.tar.gz" \
     && curl -fSL "$ELIXIR_SRC_URL" -o elixir.tar.gz \
     && mkdir -p /usr/src/elixir-src \
