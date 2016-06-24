@@ -1,5 +1,5 @@
 # DOCKER-VERSION 1.9.1
-FROM kennyballou/docker-elixir:1.2.6
+FROM kennyballou/docker-elixir:1.3.0
 MAINTAINER kballou@devnulllabs.io
 
 RUN apk update && apk add \
